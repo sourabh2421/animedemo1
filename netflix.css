@@ -1,0 +1,2306 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-track{
+    color: red;
+    width: 20px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(177, 19, 19);
+    position: fixed;
+    top: 0;
+    display: flex;
+    z-index: 100;
+}
+.navbar img{
+    height: 100%;
+    width: 120px;
+}
+.navbar-opt{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;    
+}
+.navbar-opt p{
+    display: inline;
+    margin-left: 10px;
+    position: relative;
+}
+.navbar-opt a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+.navbar-opt a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0px;
+    bottom: -2.5px;
+    transition: all 0.3s;
+}
+.navbar-opt a:hover{
+    color: white;
+}
+.navbar-opt a:hover::after{
+    width: 6vw;
+}
+.navsearch{
+    display: flex;
+    justify-content: space-evenly;
+    transition: all ease 0.3s;
+}
+.navsearch:hover{
+    transform: scale(1.1);
+}
+.navbar-opt input{
+    height: 30px;
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    border: none;
+
+}
+.searchicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 30px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.searchicon:hover{
+    cursor: pointer;
+}
+
+/** hero section **/
+.herobackground{
+    position: relative;
+    border-bottom: 2px solid white;
+    z-index: 99;
+    top: 60px;
+}
+.akatsuki{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    z-index: -10;
+    filter: brightness(45%);
+    
+}
+.hero-image{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heromsg{
+    color: white;;
+    height: 60px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    top: 120px;
+    transition: all 0.3s;
+}
+h1:hover{
+    cursor: pointer;
+}
+.heromsg h1{
+    transform: scale(3);
+    margin-bottom: 30px;
+    color: orange;
+    filter:drop-shadow(0 0 5px orange);
+    background: linear-gradient(to right, rgb(224, 232, 5),#fff 35%,#ffee05);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s linear infinite;
+}
+@keyframes gradient{
+    0%{background-position: 0% 75%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 70%;}
+}
+.heromsg p{
+    margin-top: 20px;
+    transform: scale(1.6);
+    color: white;
+}
+.weeb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    position: absolute;
+    top:400px;
+    left: 50%;
+    width: 40%;
+    height: 150px;
+}
+.weeb p{
+    transform: scale(1.7);
+    color: #FFF9DE;
+}
+.login{
+    margin-top: 20px;
+    width: 500px;
+    height: 60px;
+    display: flex;
+}
+.login input{
+    width: 85%;
+    outline: none;
+    border:none;
+    font-size: 1.2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.login button{
+    width: 30%;
+    background-color: orange;
+    outline: none;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/** main body**/
+
+.mainbody{
+    width: 100%;
+    height: 1125px;
+    background-color: transparent;
+    border-top: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    background-color: black;
+}
+.heading1{
+    display: flex;
+    position: absolute;
+    left: 2.3%;
+    top: 25px;
+}
+.heading1 p{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.box1{
+    width: 95%;
+    height: 200px;
+    
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    overflow-x: auto;
+}
+.box1::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.box1::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+}
+.box1::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 5px;
+    border: 0.8px solid transparent;
+    background-clip:content-box;
+}
+
+.item{
+    position: relative;
+    width: 50px;
+    height: 160px;
+    margin-left: 13px;
+    background: #fd7301;
+}
+
+
+/**berserk**/
+
+.item1{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+    margin-left: 0;
+}
+.flip-box-inner{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display:flex ;
+    
+}
+.item1:hover .flip-box-inner{
+    transform: rotatey(180deg);
+}
+.flip-box-front , .flip-box-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front{
+    background: url(berserk.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;  
+}
+.flip-box-back{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.flip-box-back h3{
+    text-decoration: red underline 4px;
+}
+
+/**jojono**/
+
+.item2{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner1{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item2:hover .flip-box-inner1{
+    transform: rotatey(180deg);
+}
+.flip-box-front1 , .flip-box-back1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front1{
+    background: url(jojono.jfif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back1{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back1 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back1 h3{
+    text-decoration: red underline 4px;
+}
+
+/**VAGABOND***/
+
+.item3{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner2{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item3:hover .flip-box-inner2{
+    transform: rotateY(180deg);
+}
+.flip-box-front2 , .flip-box-back2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front2{
+    background: url(vagabond.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back2{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back2 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back2 h3{
+    text-decoration: red underline 4px;
+}
+
+/**one piece **/
+
+.item4{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner3{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item4:hover .flip-box-inner3{
+    transform: rotateY(180deg);
+}
+.flip-box-front3 , .flip-box-back3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front3{
+    background: url(onepiece.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back3{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back3 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back3 h3{
+    text-decoration: red underline 4px;
+}
+
+/** MONSTER **/
+
+.item5{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner4{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item5:hover .flip-box-inner4{
+    transform: rotateY(180deg);
+}
+.flip-box-front4 , .flip-box-back4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front4{
+    background: url(monster.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back4{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back4 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back4 h3{
+    text-decoration: red underline 4px;
+}
+
+/**slamdunk**/
+
+.item6{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner5{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item6:hover .flip-box-inner5{
+    transform: rotateY(180deg);
+}
+.flip-box-front5 , .flip-box-back5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front5{
+    background: url(slamdunk.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back5{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back5 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back5 h3{
+    text-decoration: red underline 4px;
+}
+
+/**vinland saga **/
+
+.item7{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner6{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item7:hover .flip-box-inner6{
+    transform: rotateY(180deg);
+}
+.flip-box-front6 , .flip-box-back6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front6{
+    background: url(vinlandsaga.jfif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back6{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back6 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back6 h3{
+    text-decoration: red underline 4px;
+}
+
+/**full metal**/
+
+.item8{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner7{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item8:hover .flip-box-inner7{
+    transform: rotateY(180deg);
+}
+.flip-box-front7 , .flip-box-back7{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front7{
+    background: url(fullmetal.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back7{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back7 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back7 h3{
+    text-decoration: red underline 4px;
+}
+
+/**grand blue**/
+
+.item9{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner8{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item9:hover .flip-box-inner8{
+    transform: rotateY(180deg);
+}
+.flip-box-front8 , .flip-box-back8{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front8{
+    background: url(grandblue.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back8{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back8 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back8 h3{
+    text-decoration: red underline 4px;
+}
+
+/**pun-pun**/
+
+.item10{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner9{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item10:hover .flip-box-inner9{
+    transform: rotateY(180deg);
+}
+.flip-box-front9 , .flip-box-back9{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front9{
+    background: url(punpun.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.flip-box-back9{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back9 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back9 h3{
+    text-decoration: red underline 4px;
+}
+
+/**box2**/
+.heading2{
+    display: flex;
+    position: absolute;
+    left: 2.3%;
+    top: 275px;
+}
+.heading2 p{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.box2{
+    width: 95%;
+    height: 200px;  
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    overflow-x: auto;
+}
+.box2::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.box2::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+}
+.box2::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 5px;
+    border: 0.8px solid transparent;
+    background-clip:content-box;
+}
+
+
+/**item11**/
+
+.item11{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+    margin-left: 0;
+}   
+.flip-box-inner10{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item11:hover .flip-box-inner10{
+    transform: rotateY(180deg);
+}
+.flip-box-front10 , .flip-box-back10{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front10{
+    background: url(dragonballz.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat; 
+}
+.flip-box-back10{
+    color: white;
+    background: url(narutoshippudin.jfif);
+    background-size: cover;
+    filter: brightness(45%);
+    transform: rotateY(180deg);
+}
+.flip-box-back10 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back10 h3{
+    text-decoration: red underline 4px;
+}
+/**item12**/
+
+.item12{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner11{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item12:hover .flip-box-inner11{
+    transform: rotateY(180deg);
+}
+.flip-box-front11 , .flip-box-back11{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front11{
+    background: url(onepiece1.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back11{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back11 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back11 h3{
+    text-decoration: red underline 4px;
+}
+
+/**item13**/ 
+
+.item13{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner12{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item13:hover .flip-box-inner12{
+    transform: rotateY(180deg);
+}
+.flip-box-front12 , .flip-box-back12{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front12{
+    background: url(Neon-Genesis-Evangelion.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back12{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back12 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back12 h3{
+    text-decoration: red underline 4px;
+}
+
+/**item14**/
+
+.item14{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner13{
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item14:hover .flip-box-inner13{
+    transform: rotateY(180deg);
+}
+.flip-box-front13 , .flip-box-back13{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front13{
+    background: url(fullmetal-alchemist-brotherhood.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back13{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back13 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back13 h3{
+    text-decoration: red underline 4px;
+}
+
+/**item15**/
+
+.item15{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner14{
+    position: reltive; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item15:hover .flip-box-inner14{
+    transform: rotateY(180deg);
+}
+.flip-box-front14 , .flip-box-back14{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front14{
+    background: url(cowboy-bebop-entry-image.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back14{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back14 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back14 h3{
+    text-decoration: red underline 4px;
+}
+/**item16**/
+
+.item16{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner15{
+    position: reltive; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item16:hover .flip-box-inner15{
+    transform: rotateY(180deg);
+}
+.flip-box-front15 , .flip-box-back15{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front15{
+    background: url(pokemon-lucky-shiny-find.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back15{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back15 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back15 h3{
+    text-decoration: red underline 4px;
+}
+/**item17**/
+
+.item17{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner16{
+    position: reltive; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item17:hover .flip-box-inner16{
+    transform: rotateY(180deg);
+}
+.flip-box-front16 , .flip-box-back16{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front16{
+    background: url(Jojo---s-Bizarre-Adventure-Golden-Wind.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back16{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back16 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back16 h3{
+    text-decoration: red underline 4px;
+}
+/**item18**/
+
+.item18{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner17{
+    position: reltive; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item18:hover .flip-box-inner17{
+    transform: rotateY(180deg);
+}
+.flip-box-front17 , .flip-box-back17{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front17{
+    background: url(Naruto-2.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back17{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back17 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back17 h3{
+    text-decoration: red underline 4px;
+}
+/**item19**/
+
+.item19{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner18{
+    position: reltive; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item19:hover .flip-box-inner18{
+    transform: rotateY(180deg);
+}
+.flip-box-front18 , .flip-box-back18{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front18{
+    background: url(deathnote.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back18{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back18 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back18 h3{
+    text-decoration: red underline 4px;
+}
+/**item20**/
+
+.item20{
+    background-color:transparent;
+    height: 160px;
+    min-width: 20%;
+    border: 1px solid transparent;
+}   
+.flip-box-inner19{
+    position: reltive; 
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    display: flex;
+}
+.item20:hover .flip-box-inner19{
+    transform: rotateY(180deg);
+}
+.flip-box-front19 , .flip-box-back19{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front19{
+    background: url(demon.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.flip-box-back19{
+    color: white;
+    background-color: black;
+    transform: rotateY(180deg);
+}
+.flip-box-back19 p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.flip-box-back19 h3{
+    text-decoration: red underline 4px;
+}
+
+/**box3**/
+.heading3{
+    display: flex;
+    position: absolute;
+    left: 2.3%;
+    top: 525px;
+}
+.heading3 p{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.slider{
+    width: 100%;
+    height: 200px;  
+    margin-top: 45px;
+    /* background-color:red; */
+    position:absolute;
+    top: 525px;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 70px;
+    background: linear-gradient(90deg,black,transparent);
+    position: absolute;
+}
+.left i{
+    position: relative;
+    top: 50%;
+    left: 20px;
+    color: white;
+    transform: scale(3);
+    z-index: 99;
+}
+.right{
+    height: 100%;
+    width: 70px;
+    background:linear-gradient(270deg,black,transparent);
+    position: absolute;
+    right: 0px;
+}
+.right i{
+    position: relative;
+    top: 50%;
+    left: 25px;
+    color: white;
+    transform: scale(3);
+    z-index: 99;
+}
+.box3{
+    width: 90%;
+    height: 200px;  
+    background-color:transparent;
+    position: absolute;
+    left: 70px;  
+    display: flex; 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.box3::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.number1{
+    position:relative;
+    min-width: 25%;
+    height:100%;
+    margin-left: 13px;  
+    background-color: transparent;
+    display: flex;
+    align-items: center;  
+    
+}
+.onephoto1{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number1.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime1{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(jujutsu.jpg);
+    background-size: cover;
+}
+/* .one:hover{
+    transform: scale(1.2);
+} */
+.onephoto2{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime2{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(sololeveling.jpg);
+    background-size: cover;
+}  
+.onephoto3{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number3.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime3{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(boruto.avif);
+    background-size: cover;
+}
+.onephoto4{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number4.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime4{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(slayer.jpg);
+    background-size: cover;
+}
+.onephoto5{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number5.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime5{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(narutoshippudin.jfif);
+    background-size: cover;
+}
+.onephoto6{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number6.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime6{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(Bleachanime.png);
+    background-size: cover;
+}
+.onephoto7{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number7.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime7{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(hunter.jpg);
+    background-size: cover;
+}
+.onephoto8{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number8.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime8{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(spyfamily.jfif);
+    background-size: cover;
+}
+.onephoto9{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number9.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 40px;
+}
+.oneanime9{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(one-piece-gear-5-luffy.avif);
+    background-size: cover;
+}
+.onephoto10{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 4;
+    background: url(number10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -25px;
+}
+.oneanime10{
+    position: relative;
+    right: 26px;
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    z-index: 5;
+    background: url(onepunch.jpe);
+    background-size: cover;
+}
+/**box4**/
+.heading4{
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 805px;
+}
+.heading4 p{
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.slider2{
+    width: 100%;
+    height: 250px;  
+    margin-top: 45px;
+    background-color:transparent;
+    position:absolute;
+    top: 800px;
+    display: flex;
+    
+}
+.box4{
+    width: 90%;
+    height: 100%;  
+    background-color:transparent;
+    position: absolute;
+    left: 70px;  
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.item21{
+    min-width: 13%;
+    height: 100%;
+    background-color: transparent;
+    margin-left: 10px;
+    position: relative;
+}
+
+.img1{
+    width: 100%;
+    height: 90%;
+    background: url(box4img1.webp);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content1{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content1 h4{
+    position: relative;
+    left: 10px;
+}
+.content1:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img2{
+    width: 100%;
+    height: 90%;
+    background: url(box4img2.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content2{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content2 h4{
+    position: relative;
+    left: 10px;
+}
+.content2:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img3{
+    width: 100%;
+    height: 90%;
+    background: url(box4img3.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content3{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content3 h4{
+    position: relative;
+    left: 10px;
+}
+.content3:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img4{
+    width: 100%;
+    height: 90%;
+    background: url(jujutsu.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content4{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content4:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img5{
+    width: 100%;
+    height: 90%;
+    background: url(box4img5.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content5{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content5:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img6{
+    width: 100%;
+    height: 90%;
+    background: url(box4img6.webp);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content6{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content6 h4{
+    position: relative;
+    left: 10px;
+}
+.content6:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img7{
+    width: 100%;
+    height: 90%;
+    background: url(box4img7.jfif);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content7{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content7 h4{
+    position: relative;
+    left: 20px;
+}
+.content7:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img8{
+    width: 100%;
+    height: 90%;
+    background: url(box4img8.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content8{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content8 h4{
+    position: relative;
+    left: 32px;
+}
+.content8:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img9{
+    width: 100%;
+    height: 90%;
+    background: url(box4img9.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content9{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content9:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img10{
+    width: 100%;
+    height: 90%;
+    background: url(box4img10.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content10{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content10:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img11{
+    width: 100%;
+    height: 90%;
+    background: url(box4img11.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content11{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content11:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img12{
+    width: 100%;
+    height: 90%;
+    background: url(box4img12.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content12{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content12 h4{
+    position: relative;
+    left: 10px;
+}
+.content12:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img13{
+    width: 100%;
+    height: 90%;
+    background: url(box4img13.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content13{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content13:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img14{
+    width: 100%;
+    height: 90%;
+    background: url(box4img14.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content14{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content14 h4{
+    position: relative;
+    left: 10px;
+}
+.content14:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.img15{
+    width: 100%;
+    height: 90%;
+    background: url(box4img15.jpg);
+    background-size: cover;
+    transition: all 0.4s;
+    margin-top: 12px;
+}
+.content15{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3rem;
+}
+.content15 h4{
+    position: relative;
+    left: 10px;
+}
+.content15:hover{
+    color: white;
+    opacity: 1;
+    filter: brightness(200%);
+    box-shadow: 0px 0px 15px white;
+}
+.item, .number1,.item21,.left,.right:hover{
+    cursor: pointer;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 260px;
+    background-color: black;
+    position: relative;
+    top: 60px;
+}
+.social-links{
+    width: 100%;
+    height: 40px;
+    background-color:white;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.social-links a{
+    font-size: 35px;
+    color: black;
+    transition: all 0.2s;
+}
+.social-links a:hover{
+    filter: drop-shadow(2px 0 2px #1a1a1a);
+}
+.chat{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(19, 215,19);
+    border: 3px solid rgb(19, 215,19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    transition: all 0.3s;
+}
+.whatsapp a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.whatsapp:hover{
+    box-shadow: 0 0 10px rgb(19, 215,19);
+}
+.footerlist{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+}
+.list ul{
+    font-size: 1.2rem;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.696);
+    transition: all 0.2s;
+}
+.list li{
+    line-height: 50px;
+}
+.list li:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration:rgb(19, 215,19) underline;
+    text-decoration-thickness: 2px;
+}
+
+/* RESPONSIVE */ 
+/* @media screen and (max-width:400px) 
+{
+    .login{
+        position: relative;
+        transform: scale(0.8);
+        top: -80px;
+    }
+    .login button{
+        width: 40%;
+        background-color:rgb(234, 141, 19);
+        outline: none;
+        border: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+} */
+@media screen and (max-width:400px) 
+{
+.box1::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.box2::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.body{
+    overflow-x: hidden;
+}
+.navbar{
+    display: none;
+}
+.herobackground{
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    z-index: 100;
+    top: 0px;
+}
+.akatsuki{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+
+}
+.hero-image{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(mobileheroimage.jpg);  
+    background-size: cover;
+}
+.heromsg{
+    height: 60px;
+    width: 50%;
+    display: flex;
+    position: absolute;
+    right: 110px;
+    top: 120px;
+    transition: all 0.3s;
+}
+h1:hover{
+    cursor: pointer;
+}
+.heromsg h1{
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+    color: orange;
+    filter:drop-shadow(0 0 5px orange);
+    background: linear-gradient(to right, rgb(224, 232, 5),#fff 35%,#ffee05);
+    background-size: 100% auto;
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s linear infinite;
+}
+@keyframes gradient{
+    0%{background-position: 0% 75%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 70%;}
+}
+.heromsg p{
+    display: none;
+}
+.weeb{
+    position: absolute;
+    top:30vh;
+    left: 15vw;
+    width: 10%;
+    height: 150px;
+}
+.weeb p{
+    display: none;
+}
+.login{
+    margin-top: -150px;
+    width: 60vw;
+    height: 3vh;
+    display: flex;
+}
+.login input{
+    width: 85%;
+    outline: none;
+    border:none;
+    font-size: 0.7rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.login button{
+    font-size: 0.4rem;
+    color: white;
+    width: 30%;
+    background-color:rgb(234, 141, 19);
+    outline: none;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.mainbody{
+    width: 100%;
+    height: 1125px;
+    background-color: transparent;
+    border-top: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    background-color: black;
+}
+.box1{
+    overflow-y: hidden;
+}
+.box2{
+    overflow-y: hidden;
+}
+.box4, .box3{
+    position: relative;
+    left: 5px;
+    right: 0;
+    width: 100%;
+}
+.item{
+    min-width: 40vw;
+}
+.left i, .right i{
+    display: none;
+}
+.number1{
+    min-width: 60vw;  
+}
+.item21{
+    min-width: 40vw;
+}
+.one{
+    margin-left: -10vw;
+}
+.item1:hover .flip-box-inner{
+    transform: none;
+}
+.item2:hover .flip-box-inner1{
+    transform: none;
+}
+.item3:hover .flip-box-inner2{
+    transform: none;
+}
+.item4:hover .flip-box-inner3{
+    transform: none;
+}
+.item5:hover .flip-box-inner4{
+    transform: none;
+}
+.item6:hover .flip-box-inner5{
+    transform: none;
+}
+.item7:hover .flip-box-inner6{
+    transform: none;
+}
+.item8:hover .flip-box-inner7{
+    transform: none;
+}
+.item9:hover .flip-box-inner8{
+    transform: none;
+}
+.item10:hover .flip-box-inner9{
+    transform: none;
+}
+.item11:hover .flip-box-inner10{
+    transform: none;
+}
+.item12:hover .flip-box-inner11{
+    transform: none;
+}
+.item13:hover .flip-box-inner12{
+    transform: none;
+}
+.item14:hover .flip-box-inner13{
+    transform: none;
+}
+.item15:hover .flip-box-inner14{
+    transform: none;
+}
+.item16:hover .flip-box-inner15{
+    transform: none;
+}
+.item17:hover .flip-box-inner16{
+    transform: none;
+}
+.item18:hover .flip-box-inner17{
+    transform: none;
+}
+.item19:hover .flip-box-inner18{
+    transform: none;
+}
+.item20:hover .flip-box-inner19{
+    transform: none;
+}
+.heading4{
+    display: flex;
+    position: absolute;
+    left: 30vw;
+    top: 805px;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    position: relative;
+    top: 0;
+}
+.social-links{
+    width: 100%;
+    height: 25px;
+    background-color:white;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.social-links a{
+    font-size: 20px;
+    color: black;
+    transition: all 0.2s;
+}
+.list ul{
+    font-size: 0.5rem;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.696);
+    transition: all 0.2s;
+    position: relative;
+    top: -16px;
+}
+}
